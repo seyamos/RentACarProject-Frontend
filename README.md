@@ -1,3 +1,16 @@
+# 17.GunOdevi(Angular'a Başlangıç & VS Code)
+1. Angular projesi oluşturunuz ✔
+2. Bootstrap entegrasyonu yapınız ✔
+3. Markaları listeleyiniz ✔
+4. Renkleri listeleyiniz ✔
+5. Müşterileri listeleyiniz ✔
+6. Arabaları listeleyiniz. (Arabaları listelerken BrandId yerine BrandName, ColorId yerine ColorName şeklinde gösteriniz) ✔
+7. Kiralamaları listeleyiniz (Rentals) CarId yerine BrandName, CustomerId yerine FirstName + LastName şeklinde gösteriniz ✔
+
+
+
+
+
 # Rentacar
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
