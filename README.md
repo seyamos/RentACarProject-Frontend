@@ -1,4 +1,4 @@
-# 17.GunOdevi(Angular & VS Code)
+# 17.GunOdevi(Angular'a Başlangıç & VS Code)
 1. Angular projesi oluşturunuz
 2. Bootstrap entegrasyonu yapınız
 3. Markaları listeleyiniz
