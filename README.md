@@ -7,7 +7,13 @@
 6. Arabaları listeleyiniz. (Arabaları listelerken BrandId yerine BrandName, ColorId yerine ColorName şeklinde gösteriniz) ✔
 7. Kiralamaları listeleyiniz (Rentals) CarId yerine BrandName, CustomerId yerine FirstName + LastName şeklinde gösteriniz ✔
 
+# 18.GunOdevi
 
+1. Brand listesinde herhangi bir marka seçildiğinde, o markaya ait arabaları listeleyiniz. ✔
+
+2. Color listesinde herhangi bir renk seçildiğinde, o renge ait arabaları listeleyiniz. ✔
+
+3. Car listesinde bir arabaya tıklandığında o arabaya ait detay sayfası oluşturunuz. Bu sayfada bu araca ait resimleri de gösteriniz. ✔(Resimler geliyor ama tam bitmedi)
 
 
 
