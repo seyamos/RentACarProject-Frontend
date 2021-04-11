@@ -1,0 +1,44 @@
+<div *ngIf="dataLoaded==false" class="spinner-border text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>  
+
+  <table *ngIf="dataLoaded==true" class="table">
+         
+
+
+
+
+    <table class="table" >     
+
+    <div *ngFor = "let cardetail of carDetails"> </div>
+    
+    <thead>
+      <tr>
+        <th>Car Id</th>
+        <th>Car Name</th>
+        <th>Brand Name</th>
+        <th>Color Name</th>
+        <th>Model Year</th>
+        <th>Descriptions</th>
+        <th>Daily Price</th>
+        <!-- <th>Car Image</th> -->
+      </tr>
+    </thead>
+  
+    <tr *ngFor="let cardetail of carDetails">
+      <td>{{ cardetail.carId }}</td>
+      <td>{{ cardetail.carName }}</td>
+      <td>{{ cardetail.brandName }}</td>
+      <td>{{ cardetail.colorName }}</td>
+      <td>{{ cardetail.modelYear }}</td>      
+      <td>{{ cardetail.descriptions }}</td>
+      <td>{{ cardetail.dailyPrice }}</td>
+      <td>
+        <img *ngIf=" cardetail.imagePath==null" width="100px" height="100px" src="https://localhost:44346/Images/default.png"/>
+        <img *ngIf=" cardetail.imagePath!=null" width="100px" height="100px" src="https://localhost:44346{{ cardetail.imagePath }}"/></td>
+      <td><button routerLink="/carDetails/{{cardetail.carId}}" type="button" class="btn btn-success">
+        View</button></td>
+
+    </tr>
+  </table>
+  

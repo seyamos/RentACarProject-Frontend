@@ -1,0 +1,35 @@
+
+<table class="table" >     
+
+    <div *ngFor = "let cardetail of carDetails"> </div>
+    
+    <thead>
+      <tr>
+        <th>Car Id</th>
+        <th>Car Name</th>
+        <th>Brand Name</th>
+        <th>Color Name</th>
+        <th>Model Year</th>
+        <th>Descriptions</th>
+        <th>Daily Price</th>
+        <th>Car Image</th>
+      </tr>
+    </thead>
+  
+    <tr *ngFor="let cardetail of carDetails"routerLink="/carDetails/{{cardetail.carId}}">
+      
+      <td>{{ cardetail.carId }}</td>
+      <td>{{ cardetail.carName }}</td>
+      <td>{{ cardetail.brandName }}</td>
+      <td>{{ cardetail.colorName }}</td>
+      <td>{{ cardetail.modelYear }}</td>      
+      <td>{{ cardetail.descriptions }}</td>
+      <td>{{ cardetail.dailyPrice }}</td>
+      <td>{{ cardetail.imagePath }}</td>
+      <td><button routerLink="/carDetails/{{cardetail.carId}}" type="button" class="btn btn-success">
+        detay</button></td>
+
+    </tr>
+  </table>
+  
+

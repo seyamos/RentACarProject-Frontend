@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Car } from 'src/app/models/car';
-
-import { CarResponseModel } from 'src/app/models/carResponseModel';
 import { CarService } from 'src/app/services/car.service';
 
 @Component({
@@ -13,7 +12,8 @@ export class CarComponent implements OnInit {
   cars: Car[] = [];
   dataLoaded = false;
     
-  constructor(private carService:CarService) { }
+  constructor(private carService:CarService,
+    private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getCars();
@@ -23,7 +23,7 @@ export class CarComponent implements OnInit {
     this.carService.getCars().subscribe(response=>{
       this.cars = response.data
       this.dataLoaded = true;
-    })       
-
-  }
+    })  
+  } 
+  
 }
